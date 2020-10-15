@@ -35,10 +35,9 @@
   flex-wrap: wrap;
   &__inner-div {
     text-align: center;
+    margin: 0 auto;
   }
   &__inner-div2 {
-    margin: 0 auto;
-    text-align: center;
     display: inline-block;
     padding: 30px;
     width: auto;
