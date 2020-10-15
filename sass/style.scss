@@ -37,7 +37,7 @@ $main-color: #7899d4;
   &__three-grid {
     margin-top: 1rem;
     margin-right: 1rem;
-    box-shadow: 3px 5px 5px rgba(black, 0.5);
+    box-shadow: 3px 5px 5px rgba($main-color, 0.5);
     padding: 0.3rem;
     border-radius: 0.5rem;
 
