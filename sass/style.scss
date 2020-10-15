@@ -18,7 +18,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
-$main-color: #7899d4;
+
 
 .center-text {
   margin-top: 1.5rem;
@@ -34,16 +34,24 @@ $main-color: #7899d4;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  &__inner-div{
+    padding-left: 100px;
+  }
+  &__inner-div2{
+    display: inline-block;
+    padding:30px;
+
+  }
   &__three-grid {
     margin-top: 1rem;
     margin-right: 1rem;
     box-shadow: 3px 5px 5px rgba($main-color, 0.5);
-    padding: 0.3rem;
+    padding: 25px;
     border-radius: 0.5rem;
 
     // background-color: $main-color;
 
-    height: 50rem;
+    height: auto;
     width: 35rem;
   }
 }
