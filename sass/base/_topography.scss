@@ -1,0 +1,16 @@
+.header-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    //makes gradient text
+    background-image: linear-gradient(to right, $main-color, black);
+    -webkit-background-clip: text;
+    color: transparent;
+    //makes gradient text
+  }
+  .paragraph {
+    font-weight: 500;
+    line-height: 2.3rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }

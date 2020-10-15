@@ -28,3 +28,41 @@
       color: white;
     }
   }
+  .btn {
+    font-size: 1.5rem;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 3rem;
+    padding: 0.5rem;
+    border: 1px solid $main-color;
+    -webkit-border: 1px solid $main-color;
+    text-transform: uppercase;
+    -webkit-text-transform: uppercase;
+    text-decoration: none;
+    -webkit-text-decoration: none;
+    color: $main-color;
+    &:link {
+      font-family: 'Noto Sans', sans-serif;
+      margin-top: 3rem;
+      padding: 0.5rem;
+      border: 1px solid $main-color;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $main-color;
+    }
+    &:hover {
+      background-color: $main-color;
+      color: white;
+    }
+    &:active {
+      background-color: $main-color;
+      color: white;
+      // transition: all;
+      // animation-name: scale;
+      // animation-duration: 3s;
+    }
+  }
+  @media screen and(max-width:500px) {
+    .row__three-grid {
+      flex: 100%;
+    }
+  }
