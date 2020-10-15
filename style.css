@@ -200,7 +200,7 @@ a {
     height: auto;
     width: 350px; }
 
-@media all and (max-width: 893px) {
+@media all and (max-width: 480px) {
   .row__inner-div {
     width: 100%; }
   .row__three-grid {
