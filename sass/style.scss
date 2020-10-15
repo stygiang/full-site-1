@@ -1,0 +1,103 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+@import 'base/base';
+@import 'base/animations';
+@import 'base/topography';
+@import 'base/utilities';
+
+@import 'layout/navbar';
+@import 'layout/header';
+
+@import 'pages/home';
+
+@import 'components/button';
+@import 'components/card';
+@import 'components/grid';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+$main-color: #7899d4;
+
+.center-text {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+#me {
+  font-size: 55px;
+}
+.row {
+  // width: 100vw;
+  margin-left: 2rem;
+  margin-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__three-grid {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    box-shadow: 3px 5px 5px rgba(black, 0.5);
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+
+    // background-color: $main-color;
+
+    height: 50rem;
+    width: 35rem;
+  }
+}
+.header-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  //makes gradient text
+  background-image: linear-gradient(to right, $main-color, black);
+  -webkit-background-clip: text;
+  color: transparent;
+  //makes gradient text
+}
+.paragraph {
+  font-weight: 500;
+  line-height: 2.3rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.btn {
+  font-size: 1.5rem;
+  font-family: 'Noto Sans', sans-serif;
+  margin-top: 3rem;
+  padding: 0.5rem;
+  border: 1px solid $main-color;
+  -webkit-border: 1px solid $main-color;
+  text-transform: uppercase;
+  -webkit-text-transform: uppercase;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+  color: $main-color;
+  &:link {
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 3rem;
+    padding: 0.5rem;
+    border: 1px solid $main-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $main-color;
+  }
+  &:hover {
+    background-color: $main-color;
+    color: white;
+  }
+  &:active {
+    background-color: $main-color;
+    color: white;
+    // transition: all;
+    // animation-name: scale;
+    // animation-duration: 3s;
+  }
+}
+@media screen and(max-width:500px) {
+  .row__three-grid {
+    flex: 100%;
+  }
+}

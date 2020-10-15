@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #292d2b;
+  height: 3.5rem;
+  box-shadow: 0 10px 7px rgba($main-color, 0.5);
+  &__header {
+    margin-left: 0.5rem;
+    color: $main-color;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+  }
+  &__navigation {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+  }
+}
+.navigation {
+  list-style-type: none;
+  text-decoration: none;
+  &__link {
+    list-style: none;
+    display: inline-block;
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+    &:last-child {
+      margin-right: 0.7rem;
+    }
+  }
+}
+@media screen and (max-width: 100px) {
+  .header {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 2rem;
+    padding: 0.4rem;
+  }
+}
