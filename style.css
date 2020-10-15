@@ -172,7 +172,10 @@ a {
   text-align: center; }
 
 #me {
-  font-size: 55px; }
+  font-size: 55px;
+  background-image: linear-gradient(to right, #7899d4, black);
+  -webkit-background-clip: text;
+  color: transparent; }
 
 .row {
   margin-left: 2rem;

@@ -25,6 +25,11 @@
 }
 #me {
   font-size: 55px;
+  //makes gradient text
+  background-image: linear-gradient(to right, $main-color, black);
+  -webkit-background-clip: text;
+  color: transparent;
+  //makes gradient text
 }
 .row {
   // width: 100vw;
