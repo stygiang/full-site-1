@@ -19,7 +19,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
 
-
 .center-text {
   margin-top: 1.5rem;
   text-align: center;
@@ -34,25 +33,35 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  &__inner-div{
-    padding-left: 100px;
+  &__inner-div {
+    text-align: center;
   }
-  &__inner-div2{
+  &__inner-div2 {
+    margin: 0 auto;
+    text-align: center;
     display: inline-block;
-    padding:30px;
-    max-width: 500px;
-
+    padding: 30px;
+    width: auto;
   }
   &__three-grid {
+    margin: 0 auto;
     margin-top: 1rem;
     margin-right: 1rem;
     box-shadow: 3px 5px 5px rgba($main-color, 0.5);
     padding: 25px;
     border-radius: 0.5rem;
-
-    // background-color: $main-color;
-
     height: auto;
     width: 350px;
+  }
+}
+@media all and (max-width: 893px) {
+  .row {
+    &__inner-div {
+      width: 100%;
+    }
+    &__three-grid {
+      width: 100%;
+      margin: 0;
+    }
   }
 }

@@ -181,12 +181,15 @@ a {
   justify-content: space-between;
   flex-wrap: wrap; }
   .row__inner-div {
-    padding-left: 100px; }
+    text-align: center; }
   .row__inner-div2 {
+    margin: 0 auto;
+    text-align: center;
     display: inline-block;
     padding: 30px;
-    max-width: 500px; }
+    width: auto; }
   .row__three-grid {
+    margin: 0 auto;
     margin-top: 1rem;
     margin-right: 1rem;
     box-shadow: 3px 5px 5px rgba(120, 153, 212, 0.5);
@@ -194,3 +197,10 @@ a {
     border-radius: 0.5rem;
     height: auto;
     width: 350px; }
+
+@media all and (max-width: 893px) {
+  .row__inner-div {
+    width: 100%; }
+  .row__three-grid {
+    width: 100%;
+    margin: 0; } }
