@@ -160,13 +160,6 @@ a {
     width: 100%;
     margin-bottom: 3em; } }
 
-@media all and (max-width: 480px) {
-  .row__inner-div {
-    width: 100%; }
-  .row__three-grid {
-    width: 100%;
-    margin: 0; } }
-
 .center-text {
   margin-top: 1.5rem;
   text-align: center; }
