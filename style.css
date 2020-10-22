@@ -18,6 +18,7 @@ ul li {
 
 a {
   text-decoration: none;
+  display: inline-block;
   color: #7899d4;
   padding: 1rem; }
   a:hover {
@@ -49,7 +50,7 @@ a {
   box-shadow: 0 10px 7px rgba(120, 153, 212, 0.5); }
   .nav__header {
     font-size: 3.7rem;
-    margin-left: 0.5rem;
+    margin-left: 0.5em;
     color: #7899d4;
     display: inline-block;
     font-family: 'Lato', sans-serif;
@@ -66,9 +67,9 @@ a {
     list-style: none;
     display: inline-block; }
     .navigation__link:not(:first-child) {
-      margin-left: 1rem; }
+      margin-left: 1em; }
     .navigation__link:last-child {
-      margin-right: 0.7rem; }
+      margin-right: .7em; }
 
 a {
   font-size: 1.7rem; }
@@ -95,7 +96,6 @@ a {
     transform: translate(-50%, -50%); }
 
 .textbox__header {
-  margin: -0.5rem;
   font-family: 'Noto Sans', sans-serif;
   font-size: 6.5rem;
   font-weight: 700;
@@ -107,98 +107,58 @@ a {
     font-weight: 300;
     font-size: 2rem;
     color: #7899d4;
-    margin-bottom: 1.5rem; }
-
-.btn {
-  font-size: 1.6rem;
-  font-family: 'Noto Sans', sans-serif;
-  margin-top: 3rem;
-  padding: 0.5rem;
-  border: 1px solid #7899d4;
-  -webkit-border: 1px solid #7899d4;
-  text-transform: uppercase;
-  -webkit-text-transform: uppercase;
-  text-decoration: none;
-  -webkit-text-decoration: none;
-  color: #7899d4; }
-  .btn:link {
-    font-family: 'Noto Sans', sans-serif;
-    margin-top: 3rem;
-    padding: 0.5rem;
-    border: 1px solid #7899d4;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #7899d4; }
-  .btn:hover {
-    background-color: #7899d4;
-    color: white; }
-  .btn:active {
-    background-color: #7899d4;
-    color: white; }
-
-.btn {
-  font-size: 1.5rem;
-  font-family: 'Noto Sans', sans-serif;
-  margin-top: 3rem;
-  padding: 0.5rem;
-  border: 1px solid #7899d4;
-  -webkit-border: 1px solid #7899d4;
-  text-transform: uppercase;
-  -webkit-text-transform: uppercase;
-  text-decoration: none;
-  -webkit-text-decoration: none;
-  color: #7899d4; }
-  .btn:link {
-    font-family: 'Noto Sans', sans-serif;
-    margin-top: 3rem;
-    padding: 0.5rem;
-    border: 1px solid #7899d4;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #7899d4; }
-  .btn:hover {
-    background-color: #7899d4;
-    color: white; }
-  .btn:active {
-    background-color: #7899d4;
-    color: white; }
-
-@media screen and (max-width: 500px) {
-  .row__three-grid {
-    flex: 100%; } }
-
-.center-text {
-  margin-top: 1.5rem;
-  text-align: center; }
+    margin-bottom: 1em; }
 
 #me {
-  font-size: 55px;
+  font-size: 5.5rem;
   background-image: linear-gradient(to right, #7899d4, black);
   -webkit-background-clip: text;
   color: transparent; }
 
+.btn {
+  font-size: 1.5rem;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0.5em;
+  border: 1px solid #7899d4;
+  -webkit-border: 1px solid #7899d4;
+  text-transform: uppercase;
+  -webkit-text-transform: uppercase;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+  color: #7899d4; }
+  .btn:link {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0.5em;
+    border: 1px solid #7899d4;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #7899d4; }
+  .btn:hover {
+    background-color: #7899d4;
+    color: white; }
+  .btn:active {
+    background-color: #7899d4;
+    color: white; }
+
 .row {
-  margin-left: 2rem;
-  margin-right: 3rem;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
-  .row__inner-div {
-    text-align: center;
-    margin: 0 auto; }
-  .row__inner-div2 {
-    display: inline-block;
-    padding: 30px;
-    width: auto; }
+  width: 90%;
+  margin: 0 auto; }
   .row__three-grid {
-    margin: 0 auto;
-    margin-top: 1rem;
-    margin-right: 1rem;
     box-shadow: 3px 5px 5px rgba(120, 153, 212, 0.5);
-    padding: 25px;
-    border-radius: 0.5rem;
-    height: auto;
-    width: 350px; }
+    padding: 2.5em;
+    border-radius: 5px; }
+
+.grid-wh {
+  width: 30%; }
+
+@media (max-width: 850px) {
+  .row {
+    flex-direction: column; }
+  .grid-wh {
+    width: 100%;
+    margin-bottom: 3em; } }
 
 @media all and (max-width: 480px) {
   .row__inner-div {
@@ -206,3 +166,7 @@ a {
   .row__three-grid {
     width: 100%;
     margin: 0; } }
+
+.center-text {
+  margin-top: 1.5rem;
+  text-align: center; }

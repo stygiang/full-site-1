@@ -1,0 +1,8 @@
+#me {
+    font-size: 5.5rem;
+    //makes gradient text
+    background-image: linear-gradient(to right, $main-color, black);
+    -webkit-background-clip: text;
+    color: transparent;
+    //makes gradient text
+  }

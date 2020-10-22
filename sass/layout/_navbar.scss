@@ -6,7 +6,7 @@
   box-shadow: 0 10px 7px rgba($main-color, 0.5);
   &__header {
     font-size: 3.7rem;
-    margin-left: 0.5rem;
+    margin-left: 0.5em;
     color: $main-color;
     display: inline-block;
     font-family: 'Lato', sans-serif;
@@ -26,10 +26,10 @@
     list-style: none;
     display: inline-block;
     &:not(:first-child) {
-      margin-left: 1rem;
+      margin-left: 1em;
     }
     &:last-child {
-      margin-right: 0.7rem;
+      margin-right: .7em;
     }
   } 
 }

@@ -1,1 +1,36 @@
+.row {
+  // width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  &__three-grid {
+    box-shadow: 3px 5px 5px rgba($main-color, 0.5);
+    padding: 2.5em;
+    border-radius: 5px;
+  }
+}
+.grid-wh{
+  width:30%;
+}
+@media (max-width:850px){
+  .row{
+    flex-direction: column;
+  }
+  .grid-wh{
+    width:100%;
+    margin-bottom:3em;
+  }
+}
+@media all and (max-width: 480px) {
+  .row {
+    &__inner-div {
+      width: 100%;
+    }
+    &__three-grid {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
 

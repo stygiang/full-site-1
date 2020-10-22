@@ -16,6 +16,7 @@ ul li {
 }
 a {
   text-decoration: none;
+  display:inline-block;
   color: $main-color;
   padding: 1rem;
   &:hover {
