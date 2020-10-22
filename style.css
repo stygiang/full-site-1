@@ -158,7 +158,7 @@ a {
 .grid-wh {
   width: 30%; }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 900px) {
   .row {
     -webkit-flex-direction: column;
     flex-direction: column; }
@@ -212,3 +212,9 @@ a {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@media (max-width: 600px) {
+  .nav {
+    display: none; }
+  .nav-2 {
+    display: flex; } }
