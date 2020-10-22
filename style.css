@@ -153,7 +153,7 @@ a {
 .grid-wh {
   width: 30%; }
 
-@media all and (max-width: 900px) {
+@media all and (min-width: 900px) {
   .row {
     -webkit-flex-direction: column;
     flex-direction: column; }
