@@ -114,9 +114,11 @@ a {
     color: #7899d4;
     margin-bottom: 1em; }
 
-@media screen and (max-width: 400px) {
-  .html {
-    font-size: 55%; } }
+@media screen and (max-width: 500px) {
+  .textbox__header {
+    font-size: 3.5rem; }
+    .textbox__header-secondary {
+      font-size: 1rem; } }
 
 #me {
   font-size: 5.5rem;
